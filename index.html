@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,71 +15,101 @@
 </head>
 <body>
     <header>
-        <div class="DivLogoHeader">
-            <h1 class="LogoHeader">NDL BURGUERS</h1>
-        </div>
-        <nav>
-            <ul>
-                <li class="LIMENU"><a href="index.html">NDL BURGUERS</a></li>
-                <li class="LIMENU"><a href="html/menu.html">MENÚ</a></li>
-                <li class="LIMENU"><a href="html/locales.html">LOCALES</a></li>
-                <li class="LIMENU"><a href="html/ingredientes.html">INGREDIENTES</a></li>
-                <li class="LIMENU"><a href="html/contacto.html">¡COMUNIDAD!</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-            <section>
-                <div class="ContenedorPrincipalParrafo">    
-                    <h2 class="TituloSeccion">NDL BURGUER</h2>
-                    <P class="ParrafoIndex">En 2020 abrió sus puertas el primer local de NDL Burguers. Con aquel primer local queríamos demostrar que una hamburguesa sana y de calidad era algo que nada tenía que ver con el “Fast food”.
-                    Desde el principio apostamos por la máxima exigencia y honestidad a la hora de elaborar nuestra carta: Con productos artesanales y de primera calidad.
-                    Hoy más que nunca, estamos enfocados en hacer de esto algo mucho más grande, mientras que seguimos haciendo las cosas con la misma honestidad, exigencia y amor.</P>   
-                </div>
-                <div class="PadreImagenesCircularesIndex">
-                    <div class="DivHijaCircular">
-                        <img src="img/HamburguesaIndex.jpg" alt="Foto de hamburguesa" class="ImagenCircular">
-                        <h3 class="TextoImagenCircular"> Burguers</h3>
-                    </div>
-                    <div class="DivHijaCircular">
-                        <img src="img/HotDogIndex.jpg" alt="Foto de HotDog" class="ImagenCircular">
-                        <h3 class="TextoImagenCircular">Hot Dog</h3>
-                    </div>
-                        <div class="DivHijaCircular">
-                        <img src="img/PizzaIndex.jpg" alt="Foto de Pizza" class="ImagenCircular">
-                        <h3 class="TextoImagenCircular">Pizzas</h3>
+            <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-dark opacidad">
+                <div class="container-fluid">
+                    <a href="index.html" class="nav-item nav-link active actual" >NDL BURGUERS</a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon "></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav">
+                            <a href="html/menu.html" class="nav-item nav-link">MENÚ</a>
+                            <a href="html/locales.html" class="nav-item nav-link">LOCALES</a>
+                            <a href="html/ingredientes.html" class="nav-item nav-link">INGREDIENTES</a>
+                            <a href="html/contacto.html" class="nav-item nav-link">¡COMUNIDAD!</a>
                         </div>
                     </div>
-            </section>
-            <section>
-                <div class="InfoHamburguesa">
-                    <div class="InfoHamburguesaImagen">
-                        <img src="img/HamburguesaSectionIndex.jpg" alt="Foto de hamburguesa para descripción">
-                    </div>
-                    <div class="InfoHamburguesaParrafo">
-                        <h3>Hamburguesas</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ea corporis sunt minus sed reiciendis reprehenderit. Velit quae asperiores libero quaerat consequatur aliquid, error recusandae fugit nam reprehenderit beatae commodi.</p>
-                    </div>
                 </div>
-                <div class="InfoHamburguesa">
-                    <div class="InfoHamburguesaImagen">
-                        <img src="img/HamburguesaSectionIndex.jpg" alt="Foto de HotDog para descripción">
-                    </div>
-                    <div class="InfoHamburguesaParrafo">
-                        <h3>HotDog</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ea corporis sunt minus sed reiciendis reprehenderit. Velit quae asperiores libero quaerat consequatur aliquid, error recusandae fugit nam reprehenderit beatae commodi.</p>
-                    </div>
+            </nav>
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="LIMENU"><a href="index.html">NDL BURGUERS</a></li>
+                    <li class="LIMENU"><a href="html/menu.html">MENÚ</a></li>
+                    <li class="LIMENU"><a href="html/locales.html">LOCALES</a></li>
+                    <li class="LIMENU"><a href="html/ingredientes.html">INGREDIENTES</a></li>
+                    <li class="LIMENU"><a href="html/contacto.html">¡COMUNIDAD!</a></li>
+                </ul>
+            </div>
+        </nav> -->
+    </header>
+    <main>
+        <div class="ContenedorPrincipalParrafo">    
+            <h2 class="TituloSeccion">NDL BURGUER</h2>
+            <P class="ParrafoIndex">En 2020 abrió sus puertas el primer local de NDL Burguers. Con aquel primer local queríamos demostrar que una hamburguesa sana y de calidad era algo que nada tenía que ver con el “Fast food”.
+            Desde el principio apostamos por la máxima exigencia y honestidad a la hora de elaborar nuestra carta: Con productos artesanales y de primera calidad.
+            Hoy más que nunca, estamos enfocados en hacer de esto algo mucho más grande, mientras que seguimos haciendo las cosas con la misma honestidad, exigencia y amor.</P>   
+        </div>
+
+        <div class="container marketing">
+            <!-- Imagenes Redondeadas -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="img/HamburguesaIndex.jpg" class="img-thumbnail" alt="Foto Circular Hamburguesa">
+                    <h2 class="TextoImagenCircular">Burguers</h2>
                 </div>
-                <div class="InfoHamburguesa">
-                    <div class="InfoHamburguesaImagen">
-                        <img src="img/HamburguesaSectionIndex.jpg" alt="Foto de Pizza para descripción">
-                    </div>
-                    <div class="InfoHamburguesaParrafo">
-                        <h3>Pizzas</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ea corporis sunt minus sed reiciendis reprehenderit. Velit quae asperiores libero quaerat consequatur aliquid, error recusandae fugit nam reprehenderit beatae commodi.</p>
-                    </div>
+                <div class="col-lg-4">
+                    <img src="img/HotDogIndex2.jpg" class="img-thumbnail" alt="Foto Circular HotDog">
+                    <h2 class="TextoImagenCircular">HotDogs</h2>
                 </div>
-            </section>    
+                <div class="col-lg-4">
+                    <img src="img/PizzaIndex.jpg" class="img-thumbnail" alt="Foto Circular HotDog">
+                    <h2 class="TextoImagenCircular">Pizzas</h2>
+                </div>
+            </div>
+        </div>
+
+            <!-- EMPIEZA SECCION DE PRODUCTOS -->
+        <div class="container">
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading"> Burguers </h2>
+                    <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="img/HamburguesaSectionIndex.jpg" class="img-fluid imagenprueba" alt="Foto Informatica Burguers">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading"> HotDogs </h2>
+                    <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+                </div>    
+                <div class="col-md-5 order-md-1">
+                    <img src="img/HotDogSectionIndex.jpg" class="img-fluid" alt="Foto Informatica HotDog">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading"> Pizzas </h2>
+                    <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="img/PizzaSectionIndex.jpg" class="img-fluid" alt="Foto Informatica Pizza">
+                </div>
+            </div>
+            <hr class="featurette-divider">
+        </div>
+
+    <!-- TERMINA LA SECCION DE LOS PRODUCTOS -->
             <section>
                 <div class="Delivery">
                 <img src="img/LogoRappi.jpg" alt="Logo de Rappi" class="Rappi">
