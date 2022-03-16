@@ -1,188 +1,165 @@
+@charset "UTF-8";
+/*Parrafo principal de Index*/
+.ContenedorPrincipalParrafo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  background-color: white;
+  align-content: center; }
 
-  body{
-    padding: 0;
-    margin: 0;
-    zoom: 90%;
-    }
+.TituloSeccion {
+  text-align: center;
+  font-family: 'Teko', sans-serif;
+  color: #1c9bab;
+  font-size: 60px;
+  margin-bottom: 20px; }
 
-    header{
-      padding: 0;
-      margin: 0;
-      background-image: url("../img/BackGoundHeader2.jpg");
-      background-size:cover;
-      width: 100%;
-      height: 600px;
-      background-color: black;
-  }  
+.featurette-heading {
+  color: #1c9bab;
+  font-family: 'Teko', sans-serif;
+  font-size: 40px; }
 
- a{
-    text-decoration:none;
-    color: white;
+.ParrafoIndex {
+  margin-top: 0%;
+  margin-left: 15%;
+  margin-bottom: 100px;
+  width: 70%;
+  text-align: justify;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: larger;
+  display: block; }
 
-  }
+/*Imagenes circulares de Index*/
+.img-thumbnail {
+  border-radius: 50%;
+  margin-bottom: 40px;
+  margin-right: 10px; }
 
-  /*Menú de Navegación*/
-  .navbar-light .navbar-nav .nav-link {
-    color: grey;
-  }
-  .navbar-light .navbar-nav .nav-link:hover{
-    color: white;
-  }
-  .sticky-top navbar-expand-lg navbar-light bg-dark{
-    align-items: center;
-    margin-left: 15%;
-  }
-  .actual{
-   color: #be1522;
-  }
-  .actual:hover{
-   color: #d42c3a;
-  }
-  .opacidad{
-   opacity: 95%;  
-  }
+.TextoImagenCircular {
+  text-align: center;
+  font-family: 'Teko', sans-serif;
+  color: #be1522;
+  font-size: 40px; }
 
-  /*Parrafo principal de Index*/
-  .ContenedorPrincipalParrafo{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: center;
-    background-color: white;
-    align-content: center;
-  }
-  
-  .TituloSeccion{
-    text-align: center;
-    font-family:'Teko', sans-serif; 
-    color: #1c9bab;
-    font-size: 60px;
-    margin-bottom: 20px;
-  }
-  .featurette-heading{
-    color: #1c9bab;
-    font-family:'Teko', sans-serif; 
-    font-size: 40px;
-  }
-  
-  .ParrafoIndex{
-    margin-top: 0%;
-    margin-left: 15%;
-    margin-bottom: 100px;
-    width: 70%;
-    text-align: justify;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: larger;
-    display: block;
-  }
-  /*Imagenes circulares de Index*/
-  .img-thumbnail{
-    border-radius: 50%;
-    margin-bottom: 40px;
-    margin-right: 10px;
-  }
-  .TextoImagenCircular{
-    text-align: center;
-    font-family:'Teko', sans-serif; 
-    color: #be1522;
-    font-size: 40px;
-  }
+/*Seccion Hamburguesa,HotDog y Pizza de Index*/
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center; }
 
-   /*Seccion Hamburguesa,HotDog y Pizza de Index*/
-  .marketing .col-lg-4 {
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-  .marketing h2 {
-    font-weight: 400;
-  }
-  
-  .marketing .col-lg-4 p {
-    margin-right: .75rem;
-    margin-left: .75rem;
-  }
+.marketing h2 {
+  font-weight: 400; }
 
-  /*Estilos de marketing de deliverys*/
-  .Delivery{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
-    background-color: white;
-    align-content: left;
-  }
-  .Rappi{
-  margin:auto;
-  width: 150px;
-  height: 100%;
-  }
-  .PedidosYa{
-    margin:auto;
-    width: 150px;
-    height: 100%;
-  }
-
-  /*Estilos para Footer*/
-footer {
-	background-color:#1A1A1A;
-	height: 50%;
-  color: white;
-  padding: 15px;
-}
-
-  .nombreCreador{
-    width: 100%;
-    height: 5%;
-    background-color: black;
-    color: white;
-    font-family:'Teko', sans-serif; 
-    font-size: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-content: center;
-  }
-  .nombreCreador p {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem; }
 
 /*Seccion de Locales*/
-  .nav-link{
+.nav-link {
+  color: #a3131f;
+  font-family: 'Teko', sanss-serif;
+  font-size: 40px; }
+
+@media only screen and (max-width: 600px) {
+  .nav-link {
     color: #a3131f;
-    font-family:'Teko', sanss-serif; 
-    font-size: 40px;
-  }
-  @media only screen and (max-width: 600px) {
-    .nav-link{
-      color: #a3131f;
-      font-family:'Teko', sanss-serif; 
-      font-size: 20px;
-    }
-  }
-  .card{
-    margin-bottom: 20px;
-  }
-  .card-title{
-    color: #a3131f;
-    font-family:'Teko', sans-serif; 
-    font-size: 40px;
-  }
-  .SubtituloPlaylist{
-    color: #a3131f;
-    font-family:'Teko', sans-serif; 
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 20px;
-  }
+    font-family: 'Teko', sanss-serif;
+    font-size: 20px; } }
 
-  /*Seccion de Contacto*/
-  .Formulario{
-    width: 100%;
-    height: 100%;
-    background-color: black;
-  }
+.card {
+  margin-bottom: 20px; }
 
+.card-title {
+  color: #a3131f;
+  font-family: 'Teko', sans-serif;
+  font-size: 40px; }
 
+.SubtituloPlaylist {
+  color: #a3131f;
+  font-family: 'Teko', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px; }
 
+/*Seccion de Contacto*/
+.Formulario {
+  width: 100%;
+  height: 100%;
+  background-color: black; }
 
+/*Estilos de marketing de deliverys*/
+.Delivery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  background-color: white;
+  align-content: left; }
+
+.Rappi {
+  margin: auto;
+  width: 150px;
+  height: 100%; }
+
+.PedidosYa {
+  margin: auto;
+  width: 150px;
+  height: 100%; }
+
+footer {
+  background-color: #1A1A1A;
+  height: 50%;
+  color: white;
+  padding: 15px; }
+
+.nombreCreador {
+  width: 100%;
+  height: 5%;
+  background-color: black;
+  color: white;
+  font-family: 'Teko', sans-serif;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center; }
+
+.nombreCreador p {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+body {
+  padding: 0;
+  margin: 0;
+  zoom: 90%; }
+
+header {
+  padding: 0;
+  margin: 0;
+  background-image: url("../img/BackGoundHeader2.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  background-color: black; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+/*Menú de Navegación*/
+.navbar-light .navbar-nav .nav-link {
+  color: grey; }
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: white; }
+
+.sticky-top navbar-expand-lg navbar-light bg-dark {
+  align-items: center;
+  margin-left: 15%; }
+
+.actual {
+  color: #be1522; }
+  .actual:hover {
+    color: #d42c3a; }
+
+.opacidad {
+  opacity: 95%; }

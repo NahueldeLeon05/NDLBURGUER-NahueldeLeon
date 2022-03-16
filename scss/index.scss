@@ -1,0 +1,65 @@
+/*Parrafo principal de Index*/
+.ContenedorPrincipalParrafo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    background-color: white;
+    align-content: center;
+  }
+  
+.TituloSeccion{
+    text-align: center;
+    font-family:'Teko', sans-serif; 
+    color: #1c9bab;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.featurette-heading{
+    color: #1c9bab;
+    font-family:'Teko', sans-serif; 
+    font-size: 40px;
+}
+  
+.ParrafoIndex{
+    margin-top: 0%;
+    margin-left: 15%;
+    margin-bottom: 100px;
+    width: 70%;
+    text-align: justify;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    display: block;
+}
+
+  /*Imagenes circulares de Index*/
+.img-thumbnail{
+    border-radius: 50%;
+    margin-bottom: 40px;
+    margin-right: 10px;
+}
+.TextoImagenCircular{
+    text-align: center;
+    font-family:'Teko', sans-serif; 
+    color: #be1522;
+    font-size: 40px;
+}
+
+   /*Seccion Hamburguesa,HotDog y Pizza de Index*/
+.marketing .col-lg-4 {
+   margin-bottom: 1.5rem;
+   text-align: center;
+}
+
+.marketing{
+    h2{
+        font-weight: 400;
+    }
+}
+
+.marketing .col-lg-4{
+    p{
+        margin-right: .75rem;
+        margin-left: .75rem;
+    }
+}

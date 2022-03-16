@@ -1,0 +1,48 @@
+@import "index.scss";
+@import "locales.scss";
+@import "contacto.scss";
+@import "marcas.scss";
+@import "footer.scss";
+body{
+    padding: 0;
+    margin: 0;
+    zoom: 90%;
+}
+header{
+    padding: 0;
+    margin: 0;
+    background-image: url("../img/BackGoundHeader2.jpg");
+    background-size:cover;
+    width: 100%;
+    height: 600px;
+    background-color: black;
+}  
+a{
+    text-decoration:none;
+    color: white;
+}
+
+/*Menú de Navegación*/
+.navbar-light .navbar-nav .nav-link {
+    color: grey;
+
+    &:hover{
+        color: white;
+    }
+}
+
+.sticky-top navbar-expand-lg navbar-light bg-dark{
+    align-items: center;
+    margin-left: 15%;
+}
+
+.actual{
+ color: #be1522;
+
+    &:hover{
+        color: #d42c3a;
+    }
+}
+.opacidad{
+  opacity: 95%;  
+}
