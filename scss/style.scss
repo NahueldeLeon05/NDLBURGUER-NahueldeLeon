@@ -3,6 +3,7 @@
 @import "contacto.scss";
 @import "marcas.scss";
 @import "footer.scss";
+@import "variables.scss";
 body{
     padding: 0;
     margin: 0;
@@ -19,7 +20,7 @@ header{
 }  
 a{
     text-decoration:none;
-    color: white;
+    color: $color-blanco-back;
 }
 
 /*Menú de Navegación*/
@@ -27,7 +28,7 @@ a{
     color: grey;
 
     &:hover{
-        color: white;
+        color: $color-blanco-back;
     }
 }
 

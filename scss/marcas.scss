@@ -1,10 +1,11 @@
+@import "variables.scss";
 /*Estilos de marketing de deliverys*/
 .Delivery{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
-    background-color: white;
+    background-color: $color-blanco-back;
     align-content: left;
 }
 .Rappi{

@@ -1,14 +1,15 @@
+@import "variables.scss";
 footer {
 	background-color:#1A1A1A;
 	height: 50%;
-    color: white;
+    color: $color-blanco-back;
     padding: 15px;
 }
 .nombreCreador{
     width: 100%;
     height: 5%;
     background-color: black;
-    color: white;
+    color: $color-blanco-back;
     font-family:'Teko', sans-serif; 
     font-size: 20px;
     display: flex;

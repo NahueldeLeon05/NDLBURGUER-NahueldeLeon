@@ -1,22 +1,23 @@
+@import "variables.scss";
 /*Parrafo principal de Index*/
 .ContenedorPrincipalParrafo{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-content: center;
-    background-color: white;
+    background-color: $color-blanco-back;
     align-content: center;
   }
   
 .TituloSeccion{
     text-align: center;
     font-family:'Teko', sans-serif; 
-    color: #1c9bab;
+    color: $color-celeste-titulos;
     font-size: 60px;
     margin-bottom: 20px;
 }
 .featurette-heading{
-    color: #1c9bab;
+    color: $color-celeste-titulos;
     font-family:'Teko', sans-serif; 
     font-size: 40px;
 }
