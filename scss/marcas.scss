@@ -8,13 +8,14 @@
     background-color: $color-blanco-back;
     align-content: left;
 }
+@mixin marcas ($margen , $width, $height){
+  margin:$margen;
+  width:$width;
+  height:$height;
+}
 .Rappi{
-  margin:auto;
-  width: 150px;
-  height: 100%;
+@include marcas(auto, 150px, 100%)
 }
 .PedidosYa{
-    margin:auto;
-    width: 150px;
-    height: 100%;
+ @extend .Rappi;
 }

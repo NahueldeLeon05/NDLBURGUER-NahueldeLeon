@@ -1,29 +1,29 @@
 @import "variables.scss";
 /*Seccion de Locales*/
-.nav-link{
-    color: $color-rojo-titulos;
-    font-family:'Teko', sanss-serif; 
-    font-size: 40px;
+
+@mixin estiloLocales($color, $fuente, $tamfuente) {
+    color: $color;
+    font-family: $fuente;
+    font-size: $tamfuente;
 }
+
+.nav-link{
+    @include estiloLocales($color-rojo-titulos, $fuente-teko ,40px);
+}
+
 @media only screen and (max-width: 600px) {
     .nav-link{
-      color: $color-rojo-titulos;
-      font-family:'Teko', sanss-serif; 
-      font-size: 20px;
+        @include estiloLocales($color-rojo-titulos, $fuente-teko ,20px);
     }
 }
 .card{
     margin-bottom: 20px;
 }
 .card-title{
-    color: $color-rojo-titulos;
-    font-family:'Teko', sans-serif; 
-    font-size: 40px;
+    @include estiloLocales($color-rojo-titulos, $fuente-teko ,40px);
 }
 .SubtituloPlaylist{
-    color: $color-rojo-titulos;
-    font-family:'Teko', sans-serif; 
-    font-size: 40px;
+    @extend .card-title;
     text-align: center;
     margin-bottom: 20px;
 }

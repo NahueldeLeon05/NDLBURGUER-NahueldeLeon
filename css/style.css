@@ -57,27 +57,24 @@
 /*Seccion de Locales*/
 .nav-link {
   color: #a3131f;
-  font-family: 'Teko', sanss-serif;
+  font-family: "Teko", sans-serif;
   font-size: 40px; }
 
 @media only screen and (max-width: 600px) {
   .nav-link {
     color: #a3131f;
-    font-family: 'Teko', sanss-serif;
+    font-family: "Teko", sans-serif;
     font-size: 20px; } }
 
 .card {
   margin-bottom: 20px; }
 
-.card-title {
+.card-title, .SubtituloPlaylist {
   color: #a3131f;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   font-size: 40px; }
 
 .SubtituloPlaylist {
-  color: #a3131f;
-  font-family: 'Teko', sans-serif;
-  font-size: 40px;
   text-align: center;
   margin-bottom: 20px; }
 
@@ -96,12 +93,7 @@
   background-color: white;
   align-content: left; }
 
-.Rappi {
-  margin: auto;
-  width: 150px;
-  height: 100%; }
-
-.PedidosYa {
+.Rappi, .PedidosYa {
   margin: auto;
   width: 150px;
   height: 100%; }
