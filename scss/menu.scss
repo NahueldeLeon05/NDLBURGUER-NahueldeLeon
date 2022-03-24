@@ -1,0 +1,52 @@
+@import "variables.scss";
+
+.dato{
+    h3{
+        color: $color-celeste-titulos;
+        font-family: $fuente-teko;
+        font-size: 45px;
+        text-align: center;
+        margin-top: 15px;
+    }
+    h4{
+        color: $color-rojo-titulos;
+        font-family: $fuente-teko;
+        font-size: 30px;
+        text-align: center;   
+    }
+    @media only screen and (max-width: 1200px) {
+        h3{
+            color: $color-celeste-titulos;
+            font-family: $fuente-teko;
+            font-size: 40px;            
+            text-align:center;
+            margin-top: 15px;
+            margin-left: 0px;
+        }
+        h4{
+            color: $color-rojo-titulos;
+            font-family: $fuente-teko;
+            font-size: 25px;
+            margin-left: 0px;
+            text-align: center;
+        }
+    }
+}
+.container-fluid{
+    align-items: center;
+
+    .icono-seccion{
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+    h3{
+        margin-top: 10px;
+        color: $color-celeste-titulos;
+        font-family: $fuente-teko;
+        font-size: 40px;            
+        text-align:center;
+    }
+}
+
+
