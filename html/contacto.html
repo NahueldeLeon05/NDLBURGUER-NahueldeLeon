@@ -35,6 +35,7 @@
     </nav>
     </header>
     <main>
+        <script src="/scripts/formularioComentario.js"></script>
         <section>
             <div class="ContenedorPrincipalParrafo">    
                 <h2 class="TituloSeccion">CONTACTO</h2>
@@ -45,17 +46,17 @@
             
                 <div class="mb-1">
                     <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                    <input type="text" class="form-control" id="txtNombre" placeholder="Nombre">
                 </div>
                 <div class="mb-1">
                     <label for="exampleFormControlInput1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nahuel@gmail.com">
+                    <input type="email" class="form-control" id="txtEmail" placeholder="nahuel@gmail.com">
                 </div>
                 <div class="mb-1">    
                     <label for="exampleFormControlTextarea1" class="form-label">Dejanos un comentario!</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control" id="txtComentario" rows="3"></textarea>
                 </div>
-                <button type="button" class="btn btn-dark">Enviar</button>
+                <button type="button" class="btn btn-dark" onClick="guardarComentario()">Enviar</button>
             </div>    
         </section>
         <section>
