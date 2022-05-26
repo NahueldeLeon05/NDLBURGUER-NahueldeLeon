@@ -28,6 +28,11 @@
                         <a href="locales.html" class="nav-item nav-link">LOCALES</a>
                         <a href="ingredientes.html" class="nav-item nav-link">INGREDIENTES</a>
                         <a href="contacto.html" class="nav-item nav-link">¡COMUNIDAD!</a>
+                        <a href="#" type="button" class="navbar-item nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                          </svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -35,12 +40,39 @@
     </nav>
     </header>
     <main>
-      <script src="../scripts/menuPedido.js"></script>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" id="CarritoCompra">
+                <table class="table table-dark table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Precio</th>
+                      </tr>
+                    </thead>
+                    <body>
+                    </body>
+                </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-danger">Confirmar compra</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <section>
             <div class="ContenedorPrincipalParrafo">    
                 <h2 class="TituloSeccion">MENÚ</h2>
                 <div class="container text-center">
-                <button class="btn btn-danger" onclick="IniciarJS()" id="btnPedido">Hacer pedido</button>
               </div>
         <section>
           <div class="container">
@@ -86,94 +118,10 @@
                 <h3>Burguers</h3>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                  <div class="card">
-                    <img src="../img/Burguers/BlueChese.jpg" class="card-img-top" alt="BlueChese" id="BlueChese">
-                    <div class="card-body">
-                      <h5 class="card-title">Blue Cheese</h5>
-                      <p class="card-text">Queso emmental, salsa queso azul, crocante de almendra glaseada.</p>
-                      <a href="" target="_blank" class="btn btn-danger">Carrito</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card">
-                      <img src="../img/Burguers/NDLCheese.jpg" class="card-img-top" alt="NDL Cheese" id="NDLCheese">
-                      <div class="card-body">
-                        <h5 class="card-title">NDL Cheese</h5>
-                        <p class="card-text">Extra cheddar y salsa especial.Pan de Papa artesanal de NDL. 3 Carnes</p>
-                        <a href="" target="_blank" class="btn btn-danger">Carrito</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="card">
-                      <img src="../img/Burguers/PulledPorkBurguer.jpg" class="card-img-top" alt="PulledPorkBurguer" id="PulledPorkBurguer">
-                      <div class="card-body">
-                        <h5 class="card-title">Pulled Pork Burguer</h5>
-                        <p class="card-text">Carne, cheddar, pulled pork,salsa cheddar y cebolla crispy.</p>
-                        <a href="" target="_blank" class="btn btn-danger">Carrito</a>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                  <div class="card">
-                    <img src="../img/Burguers/PulledPork.jpg" class="card-img-top" alt="Pulled Pork" id="PulledPork">
-                    <div class="card-body">
-                      <h5 class="card-title">Pulled Pork</h5>
-                      <p class="card-text">Carne de cerdo desmenuzada en salsa barbacoa, salsa cheddar y bacon.</p>
-                      <a href="" target="_blank" class="btn btn-danger">Carrito</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card">
-                      <img src="../img/Burguers/ClassicNDL.jpg" class="card-img-top" alt="ClassicNDL" id="ClassicNDL">
-                      <div class="card-body">
-                        <h5 class="card-title">Classic NDL</h5>
-                        <p class="card-text">Cheddar, cebolla, lechuga, tomate, pepinillo y mayonesa.</p>
-                        <a href="" target="_blank" class="btn btn-danger">Carrito</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="card">
-                      <img src="../img/Burguers/DonaBurguer.jpg" class="card-img-top" alt="Dona Burguer" id="DonaBurguer">
-                      <div class="card-body">
-                        <h5 class="card-title">Dona Burguer</h5>
-                        <p class="card-text">Dona glaseada, cheddar, bacon.</p>
-                        <a href="" target="_blank" class="btn btn-danger">Carrito</a>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                  <div class="card">
-                    <img src="../img/Burguers/EggBurguer.jpg" class="card-img-top" alt="Egg Burguer" id="EggBurguer">
-                    <div class="card-body">
-                      <h5 class="card-title">Egg Burguer</h5>
-                      <p class="card-text">Cheddar, huevo a la plancha, lomito ahumado y alioli.</p>
-                      <a href="" target="_blank" class="btn btn-danger">Carrito</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card">
-                      <img src="../img/Burguers/CrispyChicken.jpg" class="card-img-top" alt="CrispyChicken" id="CrispyChicken">
-                      <div class="card-body">
-                        <h5 class="card-title">Crispy Chicken</h5>
-                        <p class="card-text">Pollo rebozado, salsa cheddar, lechuga, tomate y mayonesa.</p>
-                        <a href="" target="_blank" class="btn btn-danger">Carrito</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            </div>
+        <div class="container" >
+          <div class="row d-flex flex-wrap m-4" id="contenedorBurguer">
+
+          </div>
         </div>
         <section>
           <div class="container">
@@ -187,49 +135,8 @@
                 <!-- LISTA DE HOTDOGS -->
             </div>
                 <div class="container">
-                    <div class="row">
-                        <div class="col-sm-4">
-                          <div class="card">
-                            <img src="../img/HotDogs/ClassicHotDog.jpg" class="card-img-top" alt="ClassicHotDog" id="ClassicHotDog">
-                            <div class="card-body">
-                              <h5 class="card-title">Classic HotDog</h5>
-                              <p class="card-text">Pancho con 3 gustos a elección.</p>
-                              <a href="" target="_blank" class="btn btn-danger">Carrito</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="card">
-                              <img src="../img/HotDogs/BaconTres.jpg" class="card-img-top" alt="BaconTres" id="BaconTres">
-                              <div class="card-body">
-                                <h5 class="card-title">BaconTres</h5>
-                                <p class="card-text">Pancho con 3 gustos a elección, muzzarella, panceta.</p>
-                                <a href="" target="_blank" class="btn btn-danger">Carrito</a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-sm-4">
-                            <div class="card">
-                                <img src="../img/HotDogs/Pancholitano.jpg" class="card-img-top" alt="Pancholitano" id="Pancholitano">
-                                <div class="card-body">
-                                  <h5 class="card-title">Pancholitano</h5>
-                                  <p class="card-text">Pancho con tomate, salsa pizzera, jamón, muzzarella y óregano.</p>
-                                  <a href="" target="_blank" class="btn btn-danger">Carrito</a>
-                                </div>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <img src="../img/HotDogs/Panchili.jpg" class="card-img-top" alt="Panchili" id="Panchili">
-                            <div class="card-body">
-                              <h5 class="card-title">Panchili</h5>
-                              <p class="card-text">Pancho con Fetas de Cheddar y Salsa de carne picante.</p>
-                              <a href="" target="_blank" class="btn btn-danger">Carrito</a>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
+                <div class="row d-flex flex-wrap m-4" id="contenedorHotDog">
+                      
                 </div>
         <section>
           <div class="container">
@@ -243,67 +150,12 @@
             </div>
             <!-- LISTA DE PIZZAS -->
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-4">
-                      <div class="card">
-                        <img src="../img/Pizzas/Muzza.jpg" class="card-img-top" alt="Muzzarella" id="Muzzarella">
-                        <div class="card-body">
-                          <h5 class="card-title">Muzzarella</h5>
-                          <p class="card-text">Salsa de tomate, muzzarella, aceitunas y oregano.</p>
-                          <a href="" target="_blank" class="btn btn-danger">Carrito</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card">
-                          <img src="../img/Pizzas/PancetaYHuevos.jpg" class="card-img-top" alt="PancetaYHuevos" id="PancetaYHuevos">
-                          <div class="card-body">
-                            <h5 class="card-title">Panceta Y Huevos</h5>
-                            <p class="card-text">Salsa de tomate, muzzarella, panceta salteada, huevos fritos, aceitunas.</p>
-                            <a href="" target="_blank" class="btn btn-danger">Carrito</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-4">
-                        <div class="card">
-                            <img src="../img/Pizzas/PizzaPeperoni.jpg" class="card-img-top" alt="Peperoni" id="Peperoni">
-                            <div class="card-body">
-                              <h5 class="card-title">Peperoni</h5>
-                              <p class="card-text">Salsa de tomate, muzzarella, chorizo español, aceitunas.</p>
-                              <a href="" target="_blank" class="btn btn-danger">Carrito</a>
-                            </div>
-                        </div>
-                      </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <img src="../img/Pizzas/PizzaRúculayJamónCrudo.jpg" class="card-img-top" alt="Rúcula y Jamón" id="Rúcula y Jamón">
-                        <div class="card-body">
-                          <h5 class="card-title">Rúcula y Jamón</h5>
-                          <p class="card-text">Salsa de tomate, muzzarella, jamón crudo y aceitunas negras.</p>
-                          <a href="" target="_blank" class="btn btn-danger">Carrito</a>
-                        </div>
-                      </div>
+              <div class="row d-flex flex-wrap m-4" id="contenedorPizza">
 
-                    <div class="col-sm-4">
-                        <img src="../img/Pizzas/CuatroQuesos.jpg" class="card-img-top" alt="CuatroQuesos" id="CuatroQuesos">
-                        <div class="card-body">
-                          <h5 class="card-title">Cuatro Quesos</h5>
-                          <p class="card-text">Salsa de tomate, muzzarella, queso provolone, azul, parmesano y aceitunas.</p>
-                          <a href="" target="_blank" class="btn btn-danger">Carrito</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <img src="../img/Pizzas/Fugazzeta3Cebollas.jpg" class="card-img-top" alt="Fugazzeta3Cebollas" id="Fugazzeta3Cebollas">
-                        <div class="card-body">
-                          <h5 class="card-title">Fugazzeta 3 Cebollas</h5>
-                          <p class="card-text">Muzzarella, cebolla blanca, cebolla morada, cebollita de verdeo y aceitunas negras.</p>
-                          <a href="" target="_blank" class="btn btn-danger">Carrito</a>
-                        </div>
-                    </div>
-                </div>
+              </div>
         </div>
-        <div class="container">
+      </div>
+        <div class="container"> 
           <hr>
         </div>
         <section>
@@ -365,5 +217,6 @@
         <p>NDL BURGUER | 2022</p>
         <p>DESIGNED BY | NAHUEL DE LEÓN</p>                
     </div>
+    <script src="../scripts/carrito.js"></script>
 </body>
 </html>
