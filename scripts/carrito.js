@@ -152,7 +152,17 @@ var cargarBurguer = document.getElementById('contenedorBurguer');
 var cargarHotDog = document.getElementById('contenedorHotDog')
 var cargarPizza = document.getElementById('contenedorPizza')
 
-
+var btnConfirmar = document.getElementById('btnConfirmar');
+// Registramos el evento
+btnConfirmar.addEventListener('click', () => {
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Pedido realizado con exito',
+        showConfirmButton: false,
+        timer: 1500
+      })
+})
 
 const card = (item)=>{
     return (
@@ -169,7 +179,6 @@ const card = (item)=>{
             </div>
         `)
 }
-
 const getRow = (item) => {
     return (
         `   
@@ -178,11 +187,10 @@ const getRow = (item) => {
             <td>${item.nombre}</td>
             <td>${item.cantidad}</td>
             <td>${item.precio}</td>
-            <td> <img style='width:20px' src='${item.img}' alt=></td>
+            <td>${item.precio*item.cantidad}</td>
         </tr>
         `)
 }
-
 
 
 const cargarBurguers = (datos, contenedor, esTabla) => {
@@ -212,22 +220,34 @@ const cargarPizzas = (datos, contenedor, esTabla) => {
     })
     contenedor.innerHTML = acumulador
 }
+const cargarPedido = (datos,contenedor,esTabla) =>{
+    let acumulador = ""
+    datos.forEach((data)=>{
+        acumulador += esTabla ? getRow(data) : card(data)
+    })
+    contenedor.innerHTML = acumulador
+}
 
 const agregarCarrito = (id) =>{
     const select = MENU.find(item => item.id === id);
-    carrito.push({
-        id: select.id,
-        tipo: select.tipo,
-        nombre: select.nombre,
-        precio: select.precio,
-        cantidad: 1,
-        imagen: select.img
-    })
+    const buscar = carrito.findIndex(el => el.id === id);
+    console.log(buscar)
+    if( buscar === -1 ){
+        carrito.push({
+            id: select.id,
+            tipo: select.tipo,
+            nombre: select.nombre,
+            precio: select.precio,
+            cantidad: 1,
+        })
+    }else{
+        carrito[buscar].cantidad = carrito[buscar].cantidad + 1
+    }
+    cargarPedido(carrito,tablaCarrito,true)   
     console.log(carrito)
-    cargarBurguers(carrito,tablaCarrito,true)
 }
-
 cargarBurguers(MENU,cargarBurguer,false)
 cargarHotDogs(MENU,cargarHotDog,false)
 cargarPizzas(MENU,cargarPizza,false)
+
 
