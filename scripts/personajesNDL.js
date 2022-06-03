@@ -14,9 +14,6 @@ async function getPersonajes(){
                 <img src="${personaje.image}" class="card-img-top" alt="${personaje.name}" id="${personaje.name}">
                 <div class="card-body">
                   <h5 class="card-title">${personaje.name}</h5>
-                  <p class="card-text">
-                  ${personaje.gender}
-                  </p>
                 </div>
             </div>
         </div>
