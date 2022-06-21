@@ -162,6 +162,11 @@ btnConfirmar.addEventListener('click', () => {
         showConfirmButton: false,
         timer: 1500
       })
+
+    //Vaciar carrito
+    for (let i = carrito.length; i > 0; i--) {
+        carrito.pop();
+    }
 })
 
 const card = (item)=>{
